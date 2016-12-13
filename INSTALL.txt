@@ -1,0 +1,5 @@
+    * Place the application folder somewhere on the PYTHONPATH
+    * Add the application to INSTALLED_APPS for your project
+    * Before you can start using it in your template you need to loud it:
+
+      {% load pluralize_pl %}
