@@ -1,0 +1,9 @@
+CHANGELOG
+
+Version 0.2, 5 February 2017:
+--------------------------
+* Make this a proper package and upload to PyPi
+
+Version 0.1, 23 July 2009:
+--------------------------
+* Initial version

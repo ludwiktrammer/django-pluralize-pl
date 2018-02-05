@@ -1,6 +1,0 @@
-CHANGELOG
-
-Version 0.1, 23 July 2009:
---------------------------
-
-* Initial version

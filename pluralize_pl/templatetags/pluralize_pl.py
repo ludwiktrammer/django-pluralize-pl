@@ -51,11 +51,11 @@ def pluralize_pl(value, arg=u's'):
             n = 1
             
     if n == 1 or n == -1:
-    	return singular_suffix
+        return singular_suffix
     elif str(n)[-1:] in ['2','3','4'] and str(n)[-2:-1] != '1':
-    	return plural_suffix2
+        return plural_suffix2
     else:
-    	return plural_suffix    	
+        return plural_suffix
 pluralize_pl.is_safe = False
 
 register.filter(pluralize_pl)
