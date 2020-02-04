@@ -4,6 +4,9 @@ Django Pluralize PL
 
 Simple Django plugin providing `pluralize_pl` template filter that works similarly to Django's built-in `pluralize <https://docs.djangoproject.com/en/dev/ref/templates/builtins/#pluralize>`_  plugin but respects Polish grammar rules.
 
+The plugin only makes sense in project that doesn't use Django's translation system, which already has `built-in support for pluralization <https://docs.djangoproject.com/en/2.0/topics/i18n/translation/#pluralization>`_ based on grammar rules of the target language.
+
+
 Quick start
 -----------
 
@@ -36,5 +39,3 @@ Overview
 * If value is **1**, ``{{ value|pluralize_pl:"komentarz,komentarzy,komentarze" }}`` displays "komentarz".
 * If value is **2**, ``{{ value|pluralize_pl:"komentarz,komentarzy,komentarze" }}`` displays "komentarze".
 * If value is **5**, ``{{ value|pluralize_pl:"komentarz,komentarzy,komentarze" }}`` displays "komentarzy".
-
-Note that using the filter only makes sense if you do not utilize Django's translation system, which already has `built-in support for pluralization <https://docs.djangoproject.com/en/2.0/topics/i18n/translation/#pluralization>`_ based on grammar rules of the target language.
